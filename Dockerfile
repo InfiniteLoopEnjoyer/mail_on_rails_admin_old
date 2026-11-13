@@ -10,7 +10,7 @@
 # Digest-pinned so builds can't silently pick up whatever the tag points at;
 # Dependabot (docker ecosystem) PRs tag and digest bumps. Keep the version in
 # sync with .ruby-version.
-FROM docker.io/library/ruby:4.0.6-slim@sha256:607bf92fa7ecebb4a0c6654b62cb44c48d94b36b6f5a754611ddbbe3dc5b6135 AS base
+FROM docker.io/library/ruby:4.0.9-slim@sha256:d8cb2c0714bdaba0f318af897a01d2dbde3cfa8e62d47e99cea55feb13c0e90d AS base
 
 # Rails app lives here
 WORKDIR /rails
